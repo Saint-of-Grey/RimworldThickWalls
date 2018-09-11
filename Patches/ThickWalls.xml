@@ -1,11 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>	
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "Wall"]/statBases</xpath>
-		<value>
-			<MaxHitPoints>8000</MaxHitPoints>
-			<Flammability>0.0</Flammability>
-		</value>
-	</Operation>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+   <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName = "Wall"]/statBases/MaxHitPoints</xpath>
+      <value>
+         <MaxHitPoints>8000</MaxHitPoints>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[thingClass = "Building_Door"]/statBases/MaxHitPoints</xpath>
+      <value>
+         <MaxHitPoints>7500</MaxHitPoints>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName = "Wall"]/statBases/Flammability</xpath>
+      <value>
+         <Flammability>0</Flammability>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[thingClass = "Building_Door"]/statBases/Flammability</xpath>
+      <value>
+         <Flammability>0</Flammability>
+      </value>
+   </Operation>
 </Patch>
